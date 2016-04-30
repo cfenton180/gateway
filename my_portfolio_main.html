@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://storage.googleapis.com/supplemental_media/udacityu/2730818600/bootstrap-prestructure.html -->
+<!-- Name: Chris Fenton -->
+<!-- Title: My Portfolio Site -->
+<!-- Description: This is the portfolio site in which I plan to link my future projects.  I developed this site using the bootstrap -->
+<!-- framework as a starting template, and incorporating techniques learned as part of the Intro to HTML and CSS course. For the Navbar -->
+<!-- implementation, I used the following additional sources: -->
+<!-- http://stackoverflow.com/questions/9405610/how-to-change-navbar-collapse-threshold-using-twitter-bootstrap-responsive -->
+<!-- http://www.w3schools.com/bootstrap/bootstrap_navbar.asp*/ -->
+<!-- https://getbootstrap.com/examples/navbar/ -->
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Lora:400,700'>
+  <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <title>My Portfolio Site</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand" href="#"><b>My Portfolio Site</b></a>
+      </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="http://www.udacity.com/">Udacity</a></li>
+            <li><a href="http://www.github.com/">GitHub</a></li> 
+          </ul>
+      </div>
+    </div>
+  </nav> 
+  <!-- End Navbar -->
+  
+  <!--Main Page content-->
+  <div class="container"> 
+    <header>
+      <div class="row"> <!-- Webpage title and udacity logo-->
+        <div class="title"> <!-- Added div class to differentiate title from the rest of the page-->
+          <img src="http://cameronwp.github.io/cpcom/static/udacity_logo.svg" class="img-responsive" alt="Udacity Logo" style="width:100px;height:100px;float:left">
+          <div class="text-right">
+            <h1><Strong>Christopher Fenton</Strong></h1>
+            <h4>Front-end Warrior in Training</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row"> <!-- Row containing header image at top of the page-->
+        <div class="col-md-12">
+          <img src="http://lorempixel.com/1300/200/city" class="img-responsive center-block" alt="City Image">
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="row"> <!-- Row introducing next section of the page-->
+        <div class="col-md-12">
+          <div class="text-center"> 
+            <h2>FEATURED WORK</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row"> <!-- Row including image and link of 1st and 2nd projects-->
+        <div class="col-md-6">
+          <img src="http://lorempixel.com/550/300/transport" srcset="http://lorempixel.com/550/300/transport 1x, http://lorempixel.com/1100/600/transport 2x"class="img-responsive center-block" alt="TransImage 1" data-toggle="modal" data-target="#project1">
+          <div class="text-center">
+            <h2>PROJECT I</h2>
+            <p><a href="http://github.com/">Link to project</a></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="http://lorempixel.com/550/300/nightlife" srcset="http://lorempixel.com/550/300/nightlife 1x, http://lorempixel.com/1100/600/nightlife 2x" class="img-responsive center-block" alt="NightImage 1" data-toggle="modal" data-target="#project2">
+          <div class="text-center">
+            <h2>PROJECT II</h2>
+            <p><a href="http://github.com/">Link to project</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row"> <!-- Row including image and link of 3rd and 4th projects-->
+        <div class="col-md-6">
+          <img src="http://lorempixel.com/g/550/300/nightlife" srcset="http://lorempixel.com/g/550/300/nightlife 1x, http://lorempixel.com/g/1100/600/nightlife 2x" class="img-responsive center-block" alt="NightImage 2" data-toggle="modal" data-target="#project3">
+          <div class="text-center">
+            <h2>PROJECT III</h2>
+            <p><a href="http://github.com/">Link to project</a></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="http://lorempixel.com/g/550/300/transport" srcset="http://lorempixel.com/g/550/300/transport 1x, http://lorempixel.com/g/1100/600/transport 2x" class="img-responsive center-block" alt="TransImage 2" data-toggle="modal" data-target="#project4">
+          <div class="text-center">
+            <h2>PROJECT IV</h2>
+            <p><a href="http://github.com/">Link to project</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row"> <!--Row including contact info.-->
+        <div class="text-center">
+          <h5>Contact Christopher:</h5>
+          <a href="mailto:cfenton2010@gmail.com">cfenton2010@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+  </div> 
+  <!-- End of main page content -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="p1myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="p1myModalLabel">Project I</h3>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive center-block" src="http://lorempixel.com/550/300/transport" alt="TransImage 1">
+          <p>This will be my first project in the nanodegree program.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="p2myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="p2myModalLabel">Project II</h3>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive center-block" src="http://lorempixel.com/550/300/nightlife" alt="NightImage 1">
+          <p>This will be my second project in the nanodegree program.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="p3myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="p3myModalLabel">Project III</h3>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive center-block" src="http://lorempixel.com/g/550/300/nightlife" alt="TransImage 2">
+          <p>This will be my third project in the nanodegree program.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="p4myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="p4myModalLabel">Project IV</h3>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive center-block" src="http://lorempixel.com/g/550/300/transport" alt="NightImage 2">
+          <p>This will be my fourth project in the nanodegree program.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of modals-->
+
+</body>
+</html>
+
+

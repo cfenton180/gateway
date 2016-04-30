@@ -1,0 +1,98 @@
+* {
+    font-family: "Lora", sans-serif;
+    color: #293E59;
+}
+
+body {
+    font-weight: 300;
+}
+
+/*Title Text Classes*/
+h1 {
+    color: #293E59;
+    padding-right: 5px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+h3 {
+    display: block;
+    margin-bottom: 20px;
+}
+
+h4 {
+    padding-right: 5px;
+    color: #14202F;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a {
+    padding-bottom: 40px;
+}
+
+/*bootstrap generated classes*/
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.text-right {
+    padding-top: 5px;
+}
+
+.text-center {
+    margin-bottom: 5px;
+}
+
+.col-md-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.col-md-6 {
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.modal {
+    color: black;
+    text-align: center;
+}
+
+.img-responsive.center-block {
+    margin-bottom: 5px;
+}
+
+.text-left {
+    margin-left: 10px;
+}
+
+/*Defined classes*/
+.title {
+    background-color: #EEE;
+    padding-bottom: 5px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #293E59;
+}
+
+menu {
+    color: red;
+}
+
+navigation {
+    background-color: #333 /* darkgrey */;
+}
