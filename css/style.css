@@ -37,7 +37,7 @@ h5 {
 }
 
 a {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 /*bootstrap generated classes*/
@@ -52,6 +52,15 @@ a {
 
 .text-center {
     margin-bottom: 5px;
+    display: block;
+}
+
+.text-center p {
+    font-size: 18px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    display: block;
 }
 
 .col-md-12 {
