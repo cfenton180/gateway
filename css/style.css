@@ -68,7 +68,7 @@ a {
 
 .modal {
     color: black;
-    text-align: center;
+    text-align: block;
 }
 
 .img-responsive.center-block {
